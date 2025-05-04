@@ -10,6 +10,9 @@ importers:
       '@apollo/server':
         specifier: ^4.12.0
         version: 4.12.0(graphql@16.11.0)
+      '@golevelup/nestjs-discovery':
+        specifier: ^4.0.3
+        version: 4.0.3(@nestjs/common@10.4.17(class-transformer@0.5.1)(class-validator@0.14.2)(reflect-metadata@0.1.14)(rxjs@7.8.1))(@nestjs/core@10.4.17)
       '@nestjs/apollo':
         specifier: ^12.2.2
         version: 12.2.2(@apollo/server@4.12.0(graphql@16.11.0))(@nestjs/common@10.4.17(class-transformer@0.5.1)(class-validator@0.14.2)(reflect-metadata@0.1.14)(rxjs@7.8.1))(@nestjs/core@10.4.17)(@nestjs/graphql@12.2.2(@nestjs/common@10.4.17(class-transformer@0.5.1)(class-validator@0.14.2)(reflect-metadata@0.1.14)(rxjs@7.8.1))(@nestjs/core@10.4.17)(class-transformer@0.5.1)(class-validator@0.14.2)(graphql@16.11.0)(reflect-metadata@0.1.14))(graphql@16.11.0)
@@ -1428,6 +1431,15 @@ packages:
         integrity: sha512-ZAoA40rNMPwSm+AeHpCq8STiNAwzWLJuP8Xv4CHIc9wv/PSuExjMrmjfYNj682vW0OOiZ1HKxzvjQr9XZIisQA==,
       }
     engines: { node: ^18.18.0 || ^20.9.0 || >=21.1.0 }
+
+  '@golevelup/nestjs-discovery@4.0.3':
+    resolution:
+      {
+        integrity: sha512-8w3CsXHN7+7Sn2i419Eal1Iw/kOjAd6Kb55M/ZqKBBwACCMn4WiEuzssC71LpBMI1090CiDxuelfPRwwIrQK+A==,
+      }
+    peerDependencies:
+      '@nestjs/common': ^10.x || ^11.0.0
+      '@nestjs/core': ^10.x || ^11.0.0
 
   '@graphql-tools/merge@8.4.2':
     resolution:
@@ -10444,6 +10456,12 @@ snapshots:
     dependencies:
       '@eslint/core': 0.13.0
       levn: 0.4.1
+
+  '@golevelup/nestjs-discovery@4.0.3(@nestjs/common@10.4.17(class-transformer@0.5.1)(class-validator@0.14.2)(reflect-metadata@0.1.14)(rxjs@7.8.1))(@nestjs/core@10.4.17)':
+    dependencies:
+      '@nestjs/common': 10.4.17(class-transformer@0.5.1)(class-validator@0.14.2)(reflect-metadata@0.1.14)(rxjs@7.8.1)
+      '@nestjs/core': 10.4.17(@nestjs/common@10.4.17(class-transformer@0.5.1)(class-validator@0.14.2)(reflect-metadata@0.1.14)(rxjs@7.8.1))(@nestjs/platform-express@10.4.17)(reflect-metadata@0.1.14)(rxjs@7.8.1)
+      lodash: 4.17.21
 
   '@graphql-tools/merge@8.4.2(graphql@16.11.0)':
     dependencies:
