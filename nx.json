@@ -37,7 +37,11 @@
       "options": {
         "targetName": "test"
       },
-      "exclude": ["apps/sm-auth-e2e/**/*"]
+      "exclude": [
+        "apps/sm-auth-e2e/**/*",
+        "sm-jobs-e2e/**/*",
+        "apps/sm-jobs-e2e/**/*"
+      ]
     }
   ],
   "defaultBase": "origin/main"
