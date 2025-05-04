@@ -8,8 +8,6 @@ export class UsersService {
   constructor(private readonly prisma: PrismaService) {}
 
   async createUser(data: Prisma.UserCreateInput) {
-
-
     return this.prisma.user.create({
       data: {
         ...data,
@@ -18,7 +16,11 @@ export class UsersService {
     });
   }
 
-  async getUsers(){
+  async getUsers() {
     return this.prisma.user.findMany();
+  }
+
+  async getUser(args: Prisma.UserWhereUniqueInput) {
+    return this.prisma.user.findUniqueOrThrow({ where: args });
   }
 }
