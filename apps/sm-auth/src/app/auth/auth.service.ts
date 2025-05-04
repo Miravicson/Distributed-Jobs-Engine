@@ -45,7 +45,6 @@ export class AuthService {
         email,
       });
       const authenticated = await verify(user.password, password);
-      console.log('Authenticated', authenticated);
 
       if (!authenticated) {
         throw new UnauthorizedException();
