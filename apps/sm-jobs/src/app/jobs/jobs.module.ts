@@ -6,10 +6,12 @@ import { JobsResolver } from './jobs.resolver';
 import { ClientsModule, Transport } from '@nestjs/microservices';
 import { AUTH_PACKAGE_NAME } from 'types/proto/auth';
 import { join } from 'path';
+import { PulsarModule } from '@sm/pulsar';
 
 @Module({
   imports: [
     DiscoveryModule,
+    PulsarModule,
     ClientsModule.register([
       {
         name: AUTH_PACKAGE_NAME,

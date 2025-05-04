@@ -36,7 +36,7 @@ export class GqlAuthGuard implements CanActivate, OnModuleInit {
 
     return this.authService.authenticate({ token }).pipe(
       map((res) => {
-        this.logger.verbose(res);
+        // this.logger.verbose(res);
         this.getRequest(context).user = res;
         return true;
       }),
