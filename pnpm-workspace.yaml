@@ -3,3 +3,4 @@ onlyBuiltDependencies:
   - '@prisma/client'
   - argon2
   - protobufjs
+  - pulsar-client
