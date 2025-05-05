@@ -7,7 +7,7 @@
   "// targets": "to see all targets run: nx show project grpc --web",
   "targets": {
     "build": {
-      "dependsOn": ["generate-ts-proto"],
+      "dependsOn": ["generate-ts-proto", "format-files"],
       "options": {
         "assets": [
           {
@@ -25,6 +25,9 @@
         "cwd": "{projectRoot}/src/lib",
         "input": ["proto/*.proto"]
       }
+    },
+    "format-files": {
+      "command": "nx format:write grpc"
     }
   }
 }
