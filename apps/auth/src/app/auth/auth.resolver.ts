@@ -1,7 +1,7 @@
 import { Args, Context, Mutation, Resolver } from '@nestjs/graphql';
 import { User } from '../users/models/user.model';
 import { LoginInput } from './login.input';
-import { GqlContext } from 'libs/graphql/src';
+import { GqlContext } from '@sm/graphql';
 import { AuthService } from './auth.service';
 
 @Resolver()

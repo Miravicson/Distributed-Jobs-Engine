@@ -1,5 +1,5 @@
 import { Field, ObjectType } from '@nestjs/graphql';
-import { AbstractModel } from 'libs/graphql/src';
+import { AbstractModel } from '@sm/graphql';
 
 @ObjectType()
 export class User extends AbstractModel {

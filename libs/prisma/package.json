@@ -1,6 +1,9 @@
 {
   "name": "@sm/prisma",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "@prisma/client": "^6.7.0",
+    "prisma": "^6.7.0"
+  },
   "devDependencies": {}
 }

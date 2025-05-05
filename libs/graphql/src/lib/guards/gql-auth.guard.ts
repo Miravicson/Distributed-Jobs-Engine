@@ -13,7 +13,7 @@ import {
   AUTH_PACKAGE_NAME,
   AUTH_SERVICE_NAME,
   AuthServiceClient,
-} from 'types/proto/auth';
+} from '@sm/grpc';
 @Injectable()
 export class GqlAuthGuard implements CanActivate, OnModuleInit {
   private authService: AuthServiceClient;
@@ -48,7 +48,6 @@ export class GqlAuthGuard implements CanActivate, OnModuleInit {
 
   private getRequest(context: ExecutionContext) {
     const ctx = GqlExecutionContext.create(context);
-
     return ctx.getContext().req;
   }
 }

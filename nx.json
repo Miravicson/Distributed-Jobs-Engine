@@ -40,23 +40,5 @@
       "exclude": []
     }
   ],
-  "defaultBase": "origin/main",
-  "targetDefaults": {
-    "build": {
-      "inputs": [
-        "{projectRoot}/**/*",
-        "{workspaceRoot}/lib/**/*",
-        "{workspaceRoot}/proto/*"
-      ],
-      "options": {
-        "assets": [
-          {
-            "glob": "*.proto",
-            "input": "proto",
-            "output": "proto"
-          }
-        ]
-      }
-    }
-  }
+  "defaultBase": "origin/main"
 }
