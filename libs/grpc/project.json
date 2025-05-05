@@ -1,9 +1,9 @@
 {
-  "name": "nestjs",
+  "name": "grpc",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/nestjs/src",
+  "sourceRoot": "libs/grpc/src",
   "projectType": "library",
   "tags": [],
-  "// targets": "to see all targets run: nx show project nestjs --web",
+  "// targets": "to see all targets run: nx show project grpc --web",
   "targets": {}
 }

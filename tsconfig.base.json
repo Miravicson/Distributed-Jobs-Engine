@@ -15,7 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@sm/graphql": ["libs/nestjs/src/index.ts"],
+      "@sm/grpc": ["libs/grpc/src/index.ts"],
       "@sm/nestjs": ["libs/nestjs/src/index.ts"],
+      "@sm/prisma": ["libs/prisma/src/index.ts"],
       "@sm/pulsar": ["libs/pulsar/src/index.ts"]
     }
   },
