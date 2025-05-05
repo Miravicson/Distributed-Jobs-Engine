@@ -64,6 +64,9 @@ importers:
       cookie-parser:
         specifier: ^1.4.7
         version: 1.4.7
+      fibonacci:
+        specifier: ^1.6.12
+        version: 1.6.12
       graphql:
         specifier: ^16.11.0
         version: 16.11.0
@@ -3596,6 +3599,12 @@ packages:
         integrity: sha512-1W07cM9gS6DcLperZfFSj+bWLtaPGSOHWhPiGzXmvVJbRLdG82sH/Kn8EtW1VqWVA54AKf2h5k5BbnIbwF3h6w==,
       }
 
+  bn.js@5.2.2:
+    resolution:
+      {
+        integrity: sha512-v2YAxEmKaBLahNwE1mjp4WON6huMNeuDvagFZW+ASCuA/ku0bXR9hSMw0XpiqMoA3+rmnyck/tPRSFQkoC9Cuw==,
+      }
+
   body-parser@1.20.3:
     resolution:
       {
@@ -5049,6 +5058,13 @@ packages:
       {
         integrity: sha512-cPJU47OaAoCbg0pBvzsgpTPhmhqI5eJjh/JIu8tPj5q+T7iLvW/JAYUqmE7KOB4R1ZyEhzBaIQpQpardBF5z8A==,
       }
+
+  fibonacci@1.6.12:
+    resolution:
+      {
+        integrity: sha512-TMsElZYNVVQD9weGGuXV/MjgbdW7JtWJi9EBcStN3Tfx9peksyKJv5rXFQebfR158B3EqJ/y/ktu9pd2PVpHHA==,
+      }
+    engines: { node: '>=20' }
 
   figures@3.2.0:
     resolution:
@@ -12485,6 +12501,8 @@ snapshots:
       inherits: 2.0.4
       readable-stream: 3.6.2
 
+  bn.js@5.2.2: {}
+
   body-parser@1.20.3:
     dependencies:
       bytes: 3.1.2
@@ -13383,6 +13401,10 @@ snapshots:
       picomatch: 4.0.2
 
   fflate@0.8.2: {}
+
+  fibonacci@1.6.12:
+    dependencies:
+      bn.js: 5.2.2
 
   figures@3.2.0:
     dependencies:
