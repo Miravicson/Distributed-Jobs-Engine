@@ -14,7 +14,7 @@
     ],
     "sharedGlobals": ["{workspaceRoot}/bitbucket-pipelines.yml"]
   },
-  "nxCloudId": "681651c77516b04d8d63d9b5",
+  "nxCloudId": "",
   "plugins": [
     {
       "plugin": "@nx/webpack/plugin",
@@ -40,7 +40,8 @@
       "exclude": [
         "apps/sm-auth-e2e/**/*",
         "sm-jobs-e2e/**/*",
-        "apps/sm-jobs-e2e/**/*"
+        "apps/sm-jobs-e2e/**/*",
+        "apps/executor-e2e/**/*"
       ]
     }
   ],
