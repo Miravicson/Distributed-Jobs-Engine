@@ -42,7 +42,7 @@
       }
     },
     "generate-prisma": {
-      "command": "prisma generate",
+      "command": "npx prisma generate",
       "options": {
         "cwd": "{projectRoot}",
         "input": ["prisma/schema.prisma"]
@@ -50,7 +50,7 @@
       "cache": true
     },
     "migrate-prisma": {
-      "command": "prisma migrate dev",
+      "command": "npx prisma migrate dev",
       "options": {
         "cwd": "{projectRoot}"
       }
