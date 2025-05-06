@@ -16,7 +16,7 @@
           "args": ["node-env=development"]
         }
       },
-      "dependsOn": ["generate-prisma"]
+      "dependsOn": ["generate-prisma", "^build"]
     },
     "serve": {
       "executor": "@nx/js:node",
