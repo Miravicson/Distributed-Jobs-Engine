@@ -8,7 +8,7 @@ import { ConfigService } from '@nestjs/config';
 import { Logger } from '@nestjs/common';
 
 async function bootstrap() {
-  const app = await NestFactory.create(AppModule);
+  const app = await NestFactory.create(AppModule, { bufferLogs: true });
   await init(app, false);
   app.connectMicroservice<GrpcOptions>({
     transport: Transport.GRPC,
